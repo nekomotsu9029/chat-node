@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Node y socket.io</title>
+    <link rel="stylesheet" href="/bootstrap 4.6/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-dark">
+            <a href="/" class="navbar-brand text-white">
+                Chat Node + socket.io
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="col-md-7">
+            <div class="card bg-dark text-white">
+                <div class="card-header">
+                    <h3 class="text-center w-100" >Let's Chat</h3>
+                </div>
+
+                <div id="chat" class="card-body bg-white text-dark">
+                    <!--este es el cuerpo del chat-->
+                    
+                </div>
+
+                <form id="message-form" class="card-footer d-flex w-100">
+                    <input style="width: 80%; border-radius: 0px !important;" class="form-control" type="text" id="message">
+                    <input style="width: 20%; border-radius: 0px !important;" type="submit" class="btn btn-block btn-info" value="Send">
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/Jquery.js"></script>
+        <script src="/bootstrap 4.6/bootstrap.bundle.min.js"></script>
+        <script src="/js/main.js"></script>
+    </footer>
+</body>
+</html>
